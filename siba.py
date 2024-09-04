@@ -59,7 +59,7 @@ def extrato(opcao):
 				print(f'   {item[0]:20} {simbolo} R$ {item[1]:9.2f}')
 			
 			print(20*' -')
-			print(f'   SALDO DISPONIVEL       R$ {saldo_disponivel:9.2f}')
+			print(f'   SALDO DISPONÍVEL     = R$ {saldo_disponivel:9.2f}')
 
 		else:
 			print('\n>> OPÇÃO INDISPONÍVEL!')
@@ -113,7 +113,7 @@ def sacar(opcao=''):
 			print(f'>> OPERAÇÃO NÃO REALIZADA!')
 			print(f'   LIMITE DE SAQUES DIÁRIO ATINGIDO.')
 		else:
-			print(f'   SALDO DISPONÍVEL       R$ {saldo_disponivel:9.2f}')
+			print(f'   SALDO DISPONÍVEL     = R$ {saldo_disponivel:9.2f}')
 			print(MENU_LARGURA*'_')
 			valor_saque = float(input('\n>> QUAL O VALOR DO SAQUE? '))
 
