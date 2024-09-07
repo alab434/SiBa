@@ -11,8 +11,14 @@ saques_valor_total_dia = 0.00
 opcao_escolhida = -99
 
 
+def limpar_tela():
+    if os.name == 'posix':  # Linux ou macOS
+        os.system('clear')
+    elif os.name == 'nt':  # Windows
+        os.system('cls')
+
 def menu_titulo():
-	os.system('clear')
+	limpar_tela()
 	print('\n' + ' BANCO PRAÇA '.center(MENU_LARGURA, '$') + '\n')
 
 
